@@ -20,7 +20,7 @@ repos:
   - id: check-added-large-files
   - id: check-ast
 - repo: https://github.com/psf/black
-  rev: 22.6.0
+  rev: 22.8.0
   hooks:
   - id: black
     args: [--config=app/pyproject-ci.toml]
@@ -31,12 +31,12 @@ repos:
     name: isort (python)
     args: [--settings-file=app/pyproject-ci.toml]
 - repo: https://github.com/pycqa/pylint
-  rev: v2.14.4
+  rev: v2.15.3
   hooks:
   - id: pylint
     args: [--rcfile=app/pyproject-ci.toml]
 - repo: https://github.com/asottile/pyupgrade
-  rev: 'v2.37.1'
+  rev: 'v2.38.2'
   hooks:
   - id: pyupgrade
     args: [--py38-plus]
